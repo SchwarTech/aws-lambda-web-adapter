@@ -1,0 +1,320 @@
+2024-04-04 19:46:17,485 | No config file found in this directory.
+2024-04-04 19:46:17,485 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml'
+2024-04-04 19:46:17,486 | Config file location: /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml
+2024-04-04 19:46:17,486 | Config file '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml' does not exist
+2024-04-04 19:46:17,489 | Using SAM Template at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/template.yaml
+2024-04-04 19:46:17,502 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml'
+2024-04-04 19:46:17,502 | Using config file: samconfig.toml, config environment: default
+2024-04-04 19:46:17,502 | Expand command line arguments to:
+2024-04-04 19:46:17,502 | --template_file=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/template.yaml --log_file=app-runtime.log --host=127.0.0.1 --port=3000 --static_dir=public --layer_cache_basedir=/Users/jeff/.aws-sam/layers-pkg --container_host=localhost --container_host_interface=127.0.0.1 
+2024-04-04 19:46:17,554 | local start-api command is called
+2024-04-04 19:46:17,557 | No Parameters detected in the template
+2024-04-04 19:46:17,570 | Sam customer defined id is more priority than other IDs. Customer defined id for resource PetstoreFunction is PetstoreFunction
+2024-04-04 19:46:17,570 | There is no customer defined id or cdk path defined for resource ServerlessHttpApi, so we will use the resource logical id as the resource id
+2024-04-04 19:46:17,570 | 0 stacks found in the template
+2024-04-04 19:46:17,570 | No Parameters detected in the template
+2024-04-04 19:46:17,581 | Sam customer defined id is more priority than other IDs. Customer defined id for resource PetstoreFunction is PetstoreFunction
+2024-04-04 19:46:17,581 | There is no customer defined id or cdk path defined for resource ServerlessHttpApi, so we will use the resource logical id as the resource id
+2024-04-04 19:46:17,581 | 2 resources found in the stack 
+2024-04-04 19:46:17,581 | Found Serverless function with name='PetstoreFunction' and CodeUri='PetstoreFunction'
+2024-04-04 19:46:17,581 | --base-dir is not presented, adjusting uri PetstoreFunction relative to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/template.yaml
+2024-04-04 19:46:19,401 | Found '2' API Events in Serverless function with name 'PetstoreFunction'
+2024-04-04 19:46:19,403 | Detected Inline Swagger definition
+2024-04-04 19:46:19,403 | Parsing Swagger document using 3.0 specification
+2024-04-04 19:46:19,403 | Found '0' authorizers in resource 'ServerlessHttpApi'
+2024-04-04 19:46:19,403 | Lambda function integration not found in Swagger document at path='/v1' method='x-amazon-apigateway-any-method'
+2024-04-04 19:46:19,403 | Lambda function integration not found in Swagger document at path='/v1/{proxy+}' method='x-amazon-apigateway-any-method'
+2024-04-04 19:46:19,403 | Found '0' APIs in resource 'ServerlessHttpApi'
+2024-04-04 19:46:19,403 | authorizer not found or disabled, returning early
+2024-04-04 19:46:19,403 | Removed duplicates from '0' Explicit APIs and '2' Implicit APIs to produce '2' APIs
+2024-04-04 19:46:19,404 | 2 APIs found in the template
+2024-04-04 19:46:19,420 | Mounting PetstoreFunction at http://127.0.0.1:3000/v1 [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
+2024-04-04 19:46:19,421 | Mounting PetstoreFunction at http://127.0.0.1:3000/v1/{proxy+} [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
+2024-04-04 19:46:19,421 | You can now browse to the above endpoints to invoke your functions. You do not need to restart/reload SAM CLI while working on your functions, changes will be reflected instantly/automatically. If you used sam build before running local commands, you will need to re-run sam build for the changes to be picked up. You only need to restart SAM CLI if you update your AWS SAM template
+2024-04-04 19:46:19,421 | Localhost server is starting up. Multi-threading = True
+2024-04-04 19:46:19,421 | Setting SIGTERM interrupt handler
+2024-04-04 19:46:19 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2024-04-04 19:46:19 [33mPress CTRL+C to quit[0m
+2024-04-04 19:46:29,810 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'f4df2c6e-03ab-4f06-8292-5e3a305eb140', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:29,813 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:29,813 | Invoking run.sh (java17)
+2024-04-04 19:46:29,813 | Loading AWS credentials from session with profile 'None'
+2024-04-04 19:46:29,833 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:29,833 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:29,833 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:29,833 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:29,833 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:29,834 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:31,657 | Local image is up-to-date
+2024-04-04 19:46:31,678 | Checking free port on 127.0.0.1:7790
+2024-04-04 19:46:31,691 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:31,692 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:31,975 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:31,976 | Getting lock for the key localhost-7790
+2024-04-04 19:46:31,976 | Waiting to retrieve the lock (localhost-7790) to start invocation
+2024-04-04 19:46:32,015 | [Container state] OOMKilled False
+2024-04-04 19:46:32,138 | Cleaning all decompressed code dirs
+2024-04-04 19:46:32,139 | Unable to find Click Context for getting session_id.
+2024-04-04 19:46:32 127.0.0.1 - - [04/Apr/2024 19:46:32] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:43,001 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '2c6d8f63-3cf6-43bc-a302-8f027f114388', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:43,002 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:43,002 | Invoking run.sh (java17)
+2024-04-04 19:46:43,002 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:43,002 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:43,003 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:43,003 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:43,004 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:43,004 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:43,005 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:43,030 | Checking free port on 127.0.0.1:5109
+2024-04-04 19:46:43,040 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:43,040 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:43,222 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:43,223 | Getting lock for the key localhost-5109
+2024-04-04 19:46:43,223 | Waiting to retrieve the lock (localhost-5109) to start invocation
+2024-04-04 19:46:44,245 | [Container state] OOMKilled False
+2024-04-04 19:46:44,325 | Cleaning all decompressed code dirs
+2024-04-04 19:46:44 127.0.0.1 - - [04/Apr/2024 19:46:44] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:46,815 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'ee54c6aa-dbd5-4eb2-aa72-98668c2a2750', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:46,815 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:46,815 | Invoking run.sh (java17)
+2024-04-04 19:46:46,815 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:46,816 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:46,816 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:46,816 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:46,816 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:46,816 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:46,816 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:46,842 | Checking free port on 127.0.0.1:8974
+2024-04-04 19:46:46,851 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:46,851 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:47,020 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:47,021 | Getting lock for the key localhost-8974
+2024-04-04 19:46:47,022 | Waiting to retrieve the lock (localhost-8974) to start invocation
+2024-04-04 19:46:48,053 | [Container state] OOMKilled False
+2024-04-04 19:46:48,160 | Cleaning all decompressed code dirs
+2024-04-04 19:46:48 127.0.0.1 - - [04/Apr/2024 19:46:48] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:49,750 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '590b4f13-c0eb-4e54-8365-f0e651f46967', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:49,752 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:49,752 | Invoking run.sh (java17)
+2024-04-04 19:46:49,752 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:49,752 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:49,752 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:49,752 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:49,752 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:49,752 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:49,754 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:49,778 | Checking free port on 127.0.0.1:7002
+2024-04-04 19:46:49,785 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:49,785 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:49,948 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:49,949 | Getting lock for the key localhost-7002
+2024-04-04 19:46:49,949 | Waiting to retrieve the lock (localhost-7002) to start invocation
+2024-04-04 19:46:49,969 | [Container state] OOMKilled False
+2024-04-04 19:46:50,072 | Cleaning all decompressed code dirs
+2024-04-04 19:46:50 127.0.0.1 - - [04/Apr/2024 19:46:50] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:51,915 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'a5300584-1d2c-475d-bf8f-63852d10d233', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:51,916 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:51,916 | Invoking run.sh (java17)
+2024-04-04 19:46:51,916 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:51,916 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:51,916 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:51,916 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:51,917 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:51,917 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:51,917 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:51,949 | Checking free port on 127.0.0.1:7971
+2024-04-04 19:46:51,957 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:51,957 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:52,118 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:52,119 | Getting lock for the key localhost-7971
+2024-04-04 19:46:52,120 | Waiting to retrieve the lock (localhost-7971) to start invocation
+2024-04-04 19:46:52,142 | [Container state] OOMKilled False
+2024-04-04 19:46:52,244 | Cleaning all decompressed code dirs
+2024-04-04 19:46:52 127.0.0.1 - - [04/Apr/2024 19:46:52] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:53,356 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '6a4b51f2-29dc-46a9-969e-9a7ed1e7df78', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:53,357 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:53,357 | Invoking run.sh (java17)
+2024-04-04 19:46:53,357 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:53,358 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:53,358 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:53,358 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:53,358 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:53,359 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:53,360 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:53,386 | Checking free port on 127.0.0.1:6356
+2024-04-04 19:46:53,394 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:53,394 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:53,558 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:53,560 | Getting lock for the key localhost-6356
+2024-04-04 19:46:53,561 | Waiting to retrieve the lock (localhost-6356) to start invocation
+2024-04-04 19:46:54,587 | [Container state] OOMKilled False
+2024-04-04 19:46:54,694 | Cleaning all decompressed code dirs
+2024-04-04 19:46:54 127.0.0.1 - - [04/Apr/2024 19:46:54] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:56,237 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '1c07ae30-f659-408a-8eac-778d2c6e57dc', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:56,238 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:56,238 | Invoking run.sh (java17)
+2024-04-04 19:46:56,238 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:56,238 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:56,238 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:56,238 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:56,239 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:56,239 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:56,239 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:56,260 | Checking free port on 127.0.0.1:6133
+2024-04-04 19:46:56,269 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:56,269 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:56,438 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:56,439 | Getting lock for the key localhost-6133
+2024-04-04 19:46:56,439 | Waiting to retrieve the lock (localhost-6133) to start invocation
+2024-04-04 19:46:57,458 | [Container state] OOMKilled False
+2024-04-04 19:46:57,574 | Cleaning all decompressed code dirs
+2024-04-04 19:46:57 127.0.0.1 - - [04/Apr/2024 19:46:57] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:46:59,742 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'ddbed469-ca71-410f-9b35-c9e4e50677a4', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:46:59,743 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:46:59,743 | Invoking run.sh (java17)
+2024-04-04 19:46:59,743 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:59,743 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:59,743 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:59,743 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:59,743 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:46:59,743 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:46:59,744 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:46:59,768 | Checking free port on 127.0.0.1:5649
+2024-04-04 19:46:59,776 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:46:59,777 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:46:59,941 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:46:59,942 | Getting lock for the key localhost-5649
+2024-04-04 19:46:59,942 | Waiting to retrieve the lock (localhost-5649) to start invocation
+2024-04-04 19:46:59,954 | Failed to deserialize response from RIE, returning the raw response as is
+2024-04-04 19:47:00,987 | [Container state] OOMKilled False
+2024-04-04 19:47:01,147 | Cleaning all decompressed code dirs
+2024-04-04 19:47:01,147 | Invalid lambda response received: Lambda response must be valid json
+2024-04-04 19:47:01,149 | Lambda execution failed ()
+2024-04-04 19:47:01 127.0.0.1 - - [04/Apr/2024 19:47:01] "[35m[1mGET /v1/pets HTTP/1.1[0m" 502 -
+2024-04-04 19:47:03,777 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '04030d7f-20d7-4d62-8ade-181c9f31d641', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:47:03,777 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:47:03,777 | Invoking run.sh (java17)
+2024-04-04 19:47:03,777 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:03,778 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:03,778 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:03,778 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:03,778 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:47:03,778 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:47:03,779 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:47:03,806 | Checking free port on 127.0.0.1:7117
+2024-04-04 19:47:03,815 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:47:03,815 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:47:03,974 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:47:03,975 | Getting lock for the key localhost-7117
+2024-04-04 19:47:03,975 | Waiting to retrieve the lock (localhost-7117) to start invocation
+2024-04-04 19:47:05,003 | [Container state] OOMKilled False
+2024-04-04 19:47:05,098 | Cleaning all decompressed code dirs
+2024-04-04 19:47:05 127.0.0.1 - - [04/Apr/2024 19:47:05] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:47:06,584 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '57ece073-c71f-48cb-8fb3-8a2330bf1b76', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:47:06,584 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:47:06,584 | Invoking run.sh (java17)
+2024-04-04 19:47:06,584 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:06,584 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:06,584 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:06,584 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:06,585 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:47:06,585 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:47:06,585 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:47:06,612 | Checking free port on 127.0.0.1:6110
+2024-04-04 19:47:06,620 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:47:06,621 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:47:06,780 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:47:06,780 | Getting lock for the key localhost-6110
+2024-04-04 19:47:06,780 | Waiting to retrieve the lock (localhost-6110) to start invocation
+2024-04-04 19:47:06,802 | [Container state] OOMKilled False
+2024-04-04 19:47:06,904 | Cleaning all decompressed code dirs
+2024-04-04 19:47:06 127.0.0.1 - - [04/Apr/2024 19:47:06] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:47:08,415 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'f0343566-d47d-4761-803b-825a1f1a3a9d', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:47:08,415 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:47:08,416 | Invoking run.sh (java17)
+2024-04-04 19:47:08,416 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:08,416 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:08,416 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:08,416 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:08,417 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:47:08,417 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:47:08,418 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:47:08,444 | Checking free port on 127.0.0.1:8827
+2024-04-04 19:47:08,453 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:47:08,453 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:47:08,612 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:47:08,613 | Getting lock for the key localhost-8827
+2024-04-04 19:47:08,613 | Waiting to retrieve the lock (localhost-8827) to start invocation
+2024-04-04 19:47:09,631 | [Container state] OOMKilled False
+2024-04-04 19:47:09,742 | Cleaning all decompressed code dirs
+2024-04-04 19:47:09 127.0.0.1 - - [04/Apr/2024 19:47:09] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:47:10,615 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '153ce14c-9f64-4760-9afc-2de522179451', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:47:10,615 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:47:10,616 | Invoking run.sh (java17)
+2024-04-04 19:47:10,617 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:10,617 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:10,617 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:10,618 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:10,618 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:47:10,618 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:47:10,619 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:47:10,647 | Checking free port on 127.0.0.1:8121
+2024-04-04 19:47:10,656 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:47:10,656 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:47:10,807 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:47:10,809 | Getting lock for the key localhost-8121
+2024-04-04 19:47:10,809 | Waiting to retrieve the lock (localhost-8121) to start invocation
+2024-04-04 19:47:10,831 | [Container state] OOMKilled False
+2024-04-04 19:47:10,925 | Cleaning all decompressed code dirs
+2024-04-04 19:47:10 127.0.0.1 - - [04/Apr/2024 19:47:10] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+2024-04-04 19:47:12,765 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /v1/{proxy+}', 'rawPath': '/v1/pets', 'rawQueryString': '', 'cookies': [], 'headers': {'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '901f4107-bed8-474f-9201-ec371d0120cb', 'Host': 'localhost:3000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/v1/pets', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': '4f3663ca-9594-4144-98d3-9a9eb5890f55', 'routeKey': 'GET /v1/{proxy+}', 'stage': '$default', 'time': '04/Apr/2024:23:46:17 +0000', 'timeEpoch': 1712274377, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'proxy': 'pets'}, 'stageVariables': None, 'isBase64Encoded': False}
+2024-04-04 19:47:12,765 | Found one Lambda function with name 'PetstoreFunction'
+2024-04-04 19:47:12,765 | Invoking run.sh (java17)
+2024-04-04 19:47:12,765 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:12,765 | Resolved absolute path to code is /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:12,765 | Resolving code path. Cwd=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build, CodeUri=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:12,766 | Resolved real code path to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:47:12,766 | Code /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction is not a zip/jar file
+2024-04-04 19:47:12,766 | Code /Users/jeff/.aws-sam/layers-pkg/LambdaAdapterLayerArm64-20-9c441dd4ec is not a zip/jar file
+2024-04-04 19:47:12,767 | arn:aws:lambda:us-east-1:753240598075:layer:LambdaAdapterLayerArm64:20 is already cached. Skipping download
+2024-04-04 19:47:12,795 | Checking free port on 127.0.0.1:8164
+2024-04-04 19:47:12,802 | Using local image: samcli/lambda-java:17-arm64-fa67d8e72f86bb37e9975cd83.
+
+2024-04-04 19:47:12,803 | Mounting /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction as /var/task:ro,delegated, inside runtime container
+2024-04-04 19:47:12,961 | Starting a timer for 10 seconds for function 'PetstoreFunction'
+2024-04-04 19:47:12,962 | Getting lock for the key localhost-8164
+2024-04-04 19:47:12,962 | Waiting to retrieve the lock (localhost-8164) to start invocation
+2024-04-04 19:47:12,987 | [Container state] OOMKilled False
+2024-04-04 19:47:13,093 | Cleaning all decompressed code dirs
+2024-04-04 19:47:13 127.0.0.1 - - [04/Apr/2024 19:47:13] "[33mGET /v1/pets HTTP/1.1[0m" 404 -
+
+Commands you can use next
+=========================
+[*] Validate SAM template: sam validate
+[*] Test Function in the Cloud: sam sync --stack-name {{stack-name}} --watch
+[*] Deploy: sam deploy --guided
+
+2024-04-04 19:47:19,400 | Telemetry endpoint configured to be https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-04-04 19:47:19,446 | Telemetry endpoint configured to be https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-04-04 19:47:19,446 | Unable to find Click Context for getting session_id.
+2024-04-04 19:47:19,446 | Sending Telemetry: {'metrics': [{'commandRun': {'requestId': '553a70d9-1b03-46f3-9bc9-5a486a620d28', 'installationId': 'cceee372-4d0c-4887-9c07-7e5454d1c753', 'sessionId': '8b5976cc-532e-407e-9359-f7456101fa6f', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.8.13', 'samcliVersion': '1.113.0', 'awsProfileProvided': False, 'debugFlagProvided': True, 'region': '', 'commandName': 'sam local start-api', 'metricSpecificAttributes': {'projectType': 'CFN', 'gitOrigin': None, 'projectName': '90b37000521fb900afd239156e92f496f81787d21cf0ca1a62140be823b73232', 'initialCommit': None}, 'duration': 61897, 'exitReason': 'success', 'exitCode': 0}}]}
+2024-04-04 19:47:19,447 | Sending Telemetry: {'metrics': [{'events': {'requestId': '01fccefd-ae60-4f4b-8173-59ace29f8767', 'installationId': 'cceee372-4d0c-4887-9c07-7e5454d1c753', 'sessionId': '8b5976cc-532e-407e-9359-f7456101fa6f', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.8.13', 'samcliVersion': '1.113.0', 'commandName': 'sam local start-api', 'metricSpecificAttributes': {'events': [{'event_name': 'SamConfigFileExtension', 'event_value': '.toml', 'thread_id': '86b9ff3040bf4b47b05678f5e1d75959', 'time_stamp': '2024-04-04 23:46:17.485', 'exception_name': None}, {'event_name': 'SamConfigFileExtension', 'event_value': '.toml', 'thread_id': '8dfbf22467764a8f824919f2f071d2e4', 'time_stamp': '2024-04-04 23:46:17.502', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': 'f0d4ce003a4f4da488ae05fd8ac0384a', 'time_stamp': '2024-04-04 23:46:29.812', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '00a8e9da14434a7398af854870a7b926', 'time_stamp': '2024-04-04 23:46:43.001', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': 'ae45be6698bc4316b7338ec300be67a8', 'time_stamp': '2024-04-04 23:46:46.815', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '91d70b332d06445691ff189c5e42df8a', 'time_stamp': '2024-04-04 23:46:49.752', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': 'aeed77895b3d4c499f0723d1c0f18ca2', 'time_stamp': '2024-04-04 23:46:51.916', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '953ccdb0008d4273b86c98407a5938f7', 'time_stamp': '2024-04-04 23:46:53.357', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '7c63d8b5b522420ebfa269f368afa1b6', 'time_stamp': '2024-04-04 23:46:56.237', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '1796509cbe6d489890a7cbb2bcc22d79', 'time_stamp': '2024-04-04 23:46:59.743', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': 'b2dcc1e0a44f4d889a8ffaa029ab62b1', 'time_stamp': '2024-04-04 23:47:03.777', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': 'df68d98da8a741dc90b4d50dc878475e', 'time_stamp': '2024-04-04 23:47:06.584', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '9663327bb73e48608946612e8820ce38', 'time_stamp': '2024-04-04 23:47:08.415', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '52a8907f2c754e51865f4c9ad48bcbdc', 'time_stamp': '2024-04-04 23:47:10.615', 'exception_name': None}, {'event_name': 'UsedFeature', 'event_value': 'InvokedLambdaAuthorizers', 'thread_id': '420c9b86cb0146c499a9bf62b755212e', 'time_stamp': '2024-04-04 23:47:12.765', 'exception_name': None}]}}}]}
+2024-04-04 19:47:19,816 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read timed out. (read timeout=0.1)
+2024-04-04 19:47:19,816 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read timed out. (read timeout=0.1)
+2024-04-04 19:47:19,819 | Telemetry endpoint configured to be https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-04-04 19:47:19,819 | Sending Telemetry: {'metrics': [{'runtimeMetric': {'requestId': '50978719-5b76-4066-882c-ee8af28ae30d', 'installationId': 'cceee372-4d0c-4887-9c07-7e5454d1c753', 'sessionId': '', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.8.13', 'samcliVersion': '1.113.0', 'runtimes': ['java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17', 'java17']}}]}
+2024-04-04 19:47:20,155 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read timed out. (read timeout=0.1)

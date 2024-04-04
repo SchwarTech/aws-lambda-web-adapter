@@ -1,0 +1,203 @@
+2024-04-04 19:46:09,869 | No config file found in this directory.
+2024-04-04 19:46:09,869 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml'
+2024-04-04 19:46:09,869 | Config file location: /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml
+2024-04-04 19:46:09,869 | Config file '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml' does not exist
+2024-04-04 19:46:09,873 | Using SAM Template at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/template.yaml
+2024-04-04 19:46:09,889 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/samconfig.toml'
+2024-04-04 19:46:09,889 | Using config file: samconfig.toml, config environment: default
+2024-04-04 19:46:09,889 | Expand command line arguments to:
+2024-04-04 19:46:09,889 | --template_file=/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/template.yaml --mount_with=READ --build_dir=.aws-sam/build --cache_dir=.aws-sam/cache 
+2024-04-04 19:46:09,908 | 'build' command is called
+2024-04-04 19:46:09,910 | No Parameters detected in the template
+2024-04-04 19:46:09,937 | There is no customer defined id or cdk path defined for resource PetstoreFunction, so we will use the resource logical id as the resource id
+2024-04-04 19:46:09,937 | There is no customer defined id or cdk path defined for resource ServerlessHttpApi, so we will use the resource logical id as the resource id
+2024-04-04 19:46:09,938 | 0 stacks found in the template
+2024-04-04 19:46:09,938 | No Parameters detected in the template
+2024-04-04 19:46:09,949 | There is no customer defined id or cdk path defined for resource PetstoreFunction, so we will use the resource logical id as the resource id
+2024-04-04 19:46:09,949 | There is no customer defined id or cdk path defined for resource ServerlessHttpApi, so we will use the resource logical id as the resource id
+2024-04-04 19:46:09,949 | 2 resources found in the stack 
+2024-04-04 19:46:09,949 | Found Serverless function with name='PetstoreFunction' and CodeUri='app/'
+2024-04-04 19:46:09,949 | --base-dir is not presented, adjusting uri app/ relative to /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/template.yaml
+2024-04-04 19:46:09,969 | 2 resources found in the stack 
+2024-04-04 19:46:09,969 | Found Serverless function with name='PetstoreFunction' and CodeUri='app/'
+2024-04-04 19:46:09,969 | Instantiating build definitions
+2024-04-04 19:46:09,971 | Same function build definition found, adding function (Previous: BuildDefinition(java17, /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app, Zip, , b328d026-3bd3-41e5-9529-efdd7636d384, {}, {}, arm64, []), Current: BuildDefinition(java17, /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app, Zip, , 3b54e096-c0d0-4530-8f23-632a010122e8, {}, {}, arm64, []), Function: Function(function_id='PetstoreFunction', name='PetstoreFunction', functionname='PetstoreFunction', runtime='java17', memory=512, timeout=10, handler='run.sh', imageuri=None, packagetype='Zip', imageconfig=None, codeuri='/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app', environment={'Variables': {'RUST_LOG': 'info', 'READINESS_CHECK_PATH': '/healthz', 'REMOVE_BASE_PATH': '/v1', 'AWS_LAMBDA_EXEC_WRAPPER': '/opt/bootstrap'}}, rolearn=None, layers=[<samcli.lib.providers.provider.LayerVersion object at 0x105bc7520>], events={'Root': {'Type': 'HttpApi', 'Properties': {'Path': '/v1', 'Method': 'ANY', 'ApiId': 'ServerlessHttpApi'}}, 'Petstore': {'Type': 'HttpApi', 'Properties': {'Path': '/v1/{proxy+}', 'Method': 'ANY', 'ApiId': 'ServerlessHttpApi'}}}, metadata={'SamResourceId': 'PetstoreFunction'}, inlinecode=None, codesign_config_arn=None, architectures=['arm64'], function_url_config=None, function_build_info=<FunctionBuildInfo.BuildableZip: ('BuildableZip', 'Regular ZIP function which can be build with SAM CLI')>, stack_path='', runtime_management_config=None, logging_config=None))
+2024-04-04 19:46:09,972 | Building codeuri: /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app runtime: java17 metadata: {} architecture: arm64 functions: PetstoreFunction
+2024-04-04 19:46:09,972 | Building to following folder /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:09,972 | Looking for a supported build workflow in following directories: ['/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app', '/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip']
+2024-04-04 19:46:09,973 | Loading workflow module 'aws_lambda_builders.workflows'
+2024-04-04 19:46:09,974 | Registering workflow 'CustomMakeBuilder' with capability 'Capability(language='provided', dependency_manager=None, application_framework=None)'
+2024-04-04 19:46:09,974 | Registering workflow 'DotnetCliPackageBuilder' with capability 'Capability(language='dotnet', dependency_manager='cli-package', application_framework=None)'
+2024-04-04 19:46:09,975 | Registering workflow 'GoModulesBuilder' with capability 'Capability(language='go', dependency_manager='modules', application_framework=None)'
+2024-04-04 19:46:09,976 | Registering workflow 'JavaGradleWorkflow' with capability 'Capability(language='java', dependency_manager='gradle', application_framework=None)'
+2024-04-04 19:46:09,976 | Registering workflow 'JavaMavenWorkflow' with capability 'Capability(language='java', dependency_manager='maven', application_framework=None)'
+2024-04-04 19:46:09,977 | Registering workflow 'NodejsNpmBuilder' with capability 'Capability(language='nodejs', dependency_manager='npm', application_framework=None)'
+2024-04-04 19:46:09,977 | Registering workflow 'NodejsNpmEsbuildBuilder' with capability 'Capability(language='nodejs', dependency_manager='npm-esbuild', application_framework=None)'
+2024-04-04 19:46:09,978 | Registering workflow 'PythonPipBuilder' with capability 'Capability(language='python', dependency_manager='pip', application_framework=None)'
+2024-04-04 19:46:09,978 | Registering workflow 'RubyBundlerBuilder' with capability 'Capability(language='ruby', dependency_manager='bundler', application_framework=None)'
+2024-04-04 19:46:09,979 | Registering workflow 'RustCargoLambdaBuilder' with capability 'Capability(language='rust', dependency_manager='cargo', application_framework=None)'
+2024-04-04 19:46:09,979 | Found workflow 'JavaMavenWorkflow' to support capabilities 'Capability(language='java', dependency_manager='maven', application_framework=None)'
+2024-04-04 19:46:10,400 | Running workflow 'JavaMavenWorkflow'
+2024-04-04 19:46:10,400 |  Running JavaMavenWorkflow:CopySource
+2024-04-04 19:46:10,401 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/mvnw.cmd) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/mvnw.cmd)
+2024-04-04 19:46:10,401 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/pom.xml) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/pom.xml)
+2024-04-04 19:46:10,402 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/mvnw) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/mvnw)
+2024-04-04 19:46:10,403 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src
+2024-04-04 19:46:10,403 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src)
+2024-04-04 19:46:10,405 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main
+2024-04-04 19:46:10,405 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main)
+2024-04-04 19:46:10,405 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/resources
+2024-04-04 19:46:10,406 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/resources) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/resources)
+2024-04-04 19:46:10,406 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/resources/logback.xml) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/resources/logback.xml)
+2024-04-04 19:46:10,406 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/resources/run.sh) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/resources/run.sh)
+2024-04-04 19:46:10,406 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/resources/application.properties) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/resources/application.properties)
+2024-04-04 19:46:10,407 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java
+2024-04-04 19:46:10,407 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java)
+2024-04-04 19:46:10,407 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com
+2024-04-04 19:46:10,407 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com)
+2024-04-04 19:46:10,407 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws
+2024-04-04 19:46:10,407 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws)
+2024-04-04 19:46:10,408 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo
+2024-04-04 19:46:10,408 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo)
+2024-04-04 19:46:10,408 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore
+2024-04-04 19:46:10,408 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore)
+2024-04-04 19:46:10,408 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/Application.java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/Application.java)
+2024-04-04 19:46:10,409 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/controller
+2024-04-04 19:46:10,409 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/controller) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/controller)
+2024-04-04 19:46:10,409 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/controller/PetsController.java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/controller/PetsController.java)
+2024-04-04 19:46:10,410 | Creating target folders at /var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/model
+2024-04-04 19:46:10,410 | Copying directory metadata from source (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/model) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/model)
+2024-04-04 19:46:10,410 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/model/Pet.java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/model/Pet.java)
+2024-04-04 19:46:10,410 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/model/PetData.java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/model/PetData.java)
+2024-04-04 19:46:10,411 | Copying source file (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/app/src/main/java/com/amazonaws/demo/petstore/model/Error.java) to destination (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/main/java/com/amazonaws/demo/petstore/model/Error.java)
+2024-04-04 19:46:10,411 | JavaMavenWorkflow:CopySource succeeded
+2024-04-04 19:46:10,411 |  Running JavaMavenWorkflow:MavenBuild
+2024-04-04 19:46:12,763 | Maven logs: [INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.amazonaws.demo:petstore >---------------------
+[INFO] Building petstore 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ petstore ---
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ petstore ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ petstore ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /private/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ petstore ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /private/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ petstore ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ petstore ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ petstore ---
+[INFO] Building jar: /private/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/petstore-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:2.4.4:repackage (repackage) @ petstore ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ petstore ---
+[INFO] Installing /private/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/petstore-0.0.1-SNAPSHOT.jar to /Users/jeff/.m2/repository/com/amazonaws/demo/petstore/0.0.1-SNAPSHOT/petstore-0.0.1-SNAPSHOT.jar
+[INFO] Installing /private/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/pom.xml to /Users/jeff/.m2/repository/com/amazonaws/demo/petstore/0.0.1-SNAPSHOT/petstore-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.641 s
+[INFO] Finished at: 2024-04-04T19:46:12-04:00
+[INFO] ------------------------------------------------------------------------
+2024-04-04 19:46:12,763 | JavaMavenWorkflow:MavenBuild succeeded
+2024-04-04 19:46:12,763 |  Running JavaMavenWorkflow:MavenCopyDependency
+2024-04-04 19:46:12,763 | Running copy_dependency with scope: runtime
+2024-04-04 19:46:14,343 | JavaMavenWorkflow:MavenCopyDependency succeeded
+2024-04-04 19:46:14,343 |  Running JavaMavenWorkflow:MavenCopyArtifacts
+2024-04-04 19:46:14,343 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction
+2024-04-04 19:46:14,343 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction)
+2024-04-04 19:46:14,343 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/logback.xml) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/logback.xml)
+2024-04-04 19:46:14,344 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/run.sh) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/run.sh)
+2024-04-04 19:46:14,344 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com
+2024-04-04 19:46:14,344 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com)
+2024-04-04 19:46:14,345 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws
+2024-04-04 19:46:14,345 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws)
+2024-04-04 19:46:14,345 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo
+2024-04-04 19:46:14,345 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo)
+2024-04-04 19:46:14,345 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore
+2024-04-04 19:46:14,345 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore)
+2024-04-04 19:46:14,345 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/controller
+2024-04-04 19:46:14,345 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/controller) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/controller)
+2024-04-04 19:46:14,345 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/controller/PetsController.class) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/controller/PetsController.class)
+2024-04-04 19:46:14,346 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/model
+2024-04-04 19:46:14,346 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/model) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/model)
+2024-04-04 19:46:14,346 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/model/Error.class) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/model/Error.class)
+2024-04-04 19:46:14,346 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/model/PetData.class) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/model/PetData.class)
+2024-04-04 19:46:14,346 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/model/Pet.class) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/model/Pet.class)
+2024-04-04 19:46:14,347 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/com/amazonaws/demo/petstore/Application.class) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/com/amazonaws/demo/petstore/Application.class)
+2024-04-04 19:46:14,347 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/classes/application.properties) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/application.properties)
+2024-04-04 19:46:14,348 | Creating target folders at /Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib
+2024-04-04 19:46:14,348 | Copying directory metadata from source (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib)
+2024-04-04 19:46:14,348 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-aop-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-aop-5.3.5.jar)
+2024-04-04 19:46:14,348 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-web-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-web-5.3.5.jar)
+2024-04-04 19:46:14,349 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.core.jackson-core-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.core.jackson-core-2.11.4.jar)
+2024-04-04 19:46:14,349 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-2.4.4.jar)
+2024-04-04 19:46:14,350 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.apache.logging.log4j.log4j-api-2.13.3.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.apache.logging.log4j.log4j-api-2.13.3.jar)
+2024-04-04 19:46:14,350 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.slf4j.jul-to-slf4j-1.7.30.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.slf4j.jul-to-slf4j-1.7.30.jar)
+2024-04-04 19:46:14,350 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/ch.qos.logback.logback-classic-1.2.3.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/ch.qos.logback.logback-classic-1.2.3.jar)
+2024-04-04 19:46:14,351 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-autoconfigure-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-autoconfigure-2.4.4.jar)
+2024-04-04 19:46:14,351 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/jakarta.annotation.jakarta.annotation-api-1.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/jakarta.annotation.jakarta.annotation-api-1.3.5.jar)
+2024-04-04 19:46:14,352 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.glassfish.jakarta.el-3.0.3.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.glassfish.jakarta.el-3.0.3.jar)
+2024-04-04 19:46:14,352 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-starter-tomcat-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-starter-tomcat-2.4.4.jar)
+2024-04-04 19:46:14,352 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/ch.qos.logback.logback-core-1.2.3.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/ch.qos.logback.logback-core-1.2.3.jar)
+2024-04-04 19:46:14,353 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-starter-web-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-starter-web-2.4.4.jar)
+2024-04-04 19:46:14,353 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-starter-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-starter-2.4.4.jar)
+2024-04-04 19:46:14,353 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-webmvc-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-webmvc-5.3.5.jar)
+2024-04-04 19:46:14,354 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.module.jackson-module-parameter-names-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.module.jackson-module-parameter-names-2.11.4.jar)
+2024-04-04 19:46:14,354 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.datatype.jackson-datatype-jdk8-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.datatype.jackson-datatype-jdk8-2.11.4.jar)
+2024-04-04 19:46:14,354 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-expression-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-expression-5.3.5.jar)
+2024-04-04 19:46:14,361 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.11.4.jar)
+2024-04-04 19:46:14,361 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.slf4j.slf4j-api-1.7.30.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.slf4j.slf4j-api-1.7.30.jar)
+2024-04-04 19:46:14,362 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.apache.tomcat.embed.tomcat-embed-websocket-9.0.44.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.apache.tomcat.embed.tomcat-embed-websocket-9.0.44.jar)
+2024-04-04 19:46:14,362 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.apache.logging.log4j.log4j-to-slf4j-2.13.3.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.apache.logging.log4j.log4j-to-slf4j-2.13.3.jar)
+2024-04-04 19:46:14,363 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-starter-json-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-starter-json-2.4.4.jar)
+2024-04-04 19:46:14,363 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.apache.tomcat.embed.tomcat-embed-core-9.0.44.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.apache.tomcat.embed.tomcat-embed-core-9.0.44.jar)
+2024-04-04 19:46:14,365 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-jcl-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-jcl-5.3.5.jar)
+2024-04-04 19:46:14,366 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-context-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-context-5.3.5.jar)
+2024-04-04 19:46:14,370 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.core.jackson-databind-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.core.jackson-databind-2.11.4.jar)
+2024-04-04 19:46:14,371 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/com.fasterxml.jackson.core.jackson-annotations-2.11.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/com.fasterxml.jackson.core.jackson-annotations-2.11.4.jar)
+2024-04-04 19:46:14,371 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.yaml.snakeyaml-1.27.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.yaml.snakeyaml-1.27.jar)
+2024-04-04 19:46:14,371 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-core-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-core-5.3.5.jar)
+2024-04-04 19:46:14,372 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.boot.spring-boot-starter-logging-2.4.4.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.boot.spring-boot-starter-logging-2.4.4.jar)
+2024-04-04 19:46:14,374 | Copying source file (/var/folders/hx/2580fnyj5rjc80l7c6w4zwjr0000gn/T/tmpau4kz37f/target/dependency/org.springframework.spring-beans-5.3.5.jar) to destination (/Users/jeff/dev/github/aws-lambda-web-adapter/examples/springboot-zip/.aws-sam/build/PetstoreFunction/lib/org.springframework.spring-beans-5.3.5.jar)
+2024-04-04 19:46:14,375 | JavaMavenWorkflow:MavenCopyArtifacts succeeded
+2024-04-04 19:46:14,391 | There is no customer defined id or cdk path defined for resource PetstoreFunction, so we will use the resource logical id as the resource id
+2024-04-04 19:46:14,391 | 2 resources found in the stack 
+2024-04-04 19:46:14,391 | Found Serverless function with name='PetstoreFunction' and CodeUri='app/'
+
+Build Succeeded
+
+Built Artifacts  : .aws-sam/build
+Built Template   : .aws-sam/build/template.yaml
+
+Commands you can use next
+=========================
+[*] Validate SAM template: sam validate
+[*] Invoke Function: sam local invoke
+[*] Test Function in the Cloud: sam sync --stack-name {{stack-name}} --watch
+[*] Deploy: sam deploy --guided
+2024-04-04 19:46:14,394 | Telemetry endpoint configured to be https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-04-04 19:46:14,420 | Telemetry endpoint configured to be https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-04-04 19:46:14,420 | Unable to find Click Context for getting session_id.
+2024-04-04 19:46:14,421 | Sending Telemetry: {'metrics': [{'events': {'requestId': 'a3185790-d6af-4a5d-88a7-af8c07fa7b94', 'installationId': 'cceee372-4d0c-4887-9c07-7e5454d1c753', 'sessionId': 'eab27b91-6115-4e01-b8cf-b426af6d2600', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.8.13', 'samcliVersion': '1.113.0', 'commandName': 'sam build', 'metricSpecificAttributes': {'events': [{'event_name': 'SamConfigFileExtension', 'event_value': '.toml', 'thread_id': 'dfc0cfa6fc2746e9815f9782e8de19e0', 'time_stamp': '2024-04-04 23:46:09.869', 'exception_name': None}, {'event_name': 'SamConfigFileExtension', 'event_value': '.toml', 'thread_id': 'c4cd955477944593bea7d79eaff30b7f', 'time_stamp': '2024-04-04 23:46:09.889', 'exception_name': None}, {'event_name': 'BuildFunctionRuntime', 'event_value': 'java17', 'thread_id': '2f554a3b195a4f8993ace95d566cc417', 'time_stamp': '2024-04-04 23:46:09.969', 'exception_name': None}, {'event_name': 'BuildWorkflowUsed', 'event_value': 'java-maven', 'thread_id': 'ed0074ea54564221820841fc71401d1b', 'time_stamp': '2024-04-04 23:46:09.972', 'exception_name': None}]}}}]}
+2024-04-04 19:46:14,421 | Sending Telemetry: {'metrics': [{'commandRun': {'requestId': 'bc3d7dc5-7291-4d64-b683-b640d497c13f', 'installationId': 'cceee372-4d0c-4887-9c07-7e5454d1c753', 'sessionId': 'eab27b91-6115-4e01-b8cf-b426af6d2600', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.8.13', 'samcliVersion': '1.113.0', 'awsProfileProvided': False, 'debugFlagProvided': True, 'region': '', 'commandName': 'sam build', 'metricSpecificAttributes': {'projectType': 'CFN', 'gitOrigin': None, 'projectName': '90b37000521fb900afd239156e92f496f81787d21cf0ca1a62140be823b73232', 'initialCommit': None}, 'duration': 4505, 'exitReason': 'success', 'exitCode': 0}}]}
+2024-04-04 19:46:14,834 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read timed out. (read timeout=0.1)
+2024-04-04 19:46:14,834 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read timed out. (read timeout=0.1)
