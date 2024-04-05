@@ -17,6 +17,8 @@ Resources:
       Handler: run.sh
       CodeUri: app/
       Runtime: java17
+      Architectures: 
+        - arm64
       AutoPublishAlias: live
       SnapStart:
         ApplyOn: PublishedVersions
@@ -27,7 +29,7 @@ Resources:
           REMOVE_BASE_PATH: /v1
           AWS_LAMBDA_EXEC_WRAPPER: /opt/bootstrap
       Layers:
-        - !Sub arn:aws:lambda:${AWS::Region}:753240598075:layer:LambdaAdapterLayerX86:20
+        - !Sub arn:aws:lambda:${AWS::Region}:753240598075:layer:LambdaAdapterLayerArm64:20
       Events:
         Root:
           Type: HttpApi
